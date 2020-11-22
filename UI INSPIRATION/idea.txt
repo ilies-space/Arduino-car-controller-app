@@ -7,3 +7,9 @@ CIRCUILE
 
 
 FIRST - > PIN TO UNLOCK
+
+
+
+joysticks application ui
+
+circular motion --> joysticks

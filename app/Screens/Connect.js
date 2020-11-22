@@ -4,6 +4,7 @@ import {Button, Text, View} from 'react-native';
 import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
 import {mainColor} from '../../Colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {DotIndicator} from 'react-native-indicators';
 
 export default function Connect() {
   const navigation = useNavigation();
@@ -12,8 +13,12 @@ export default function Connect() {
     <View style={{flex: 1, backgroundColor: 'black'}}>
       <View
         style={{alignItems: 'center', height: 200, justifyContent: 'center'}}>
-        <Icon name="car-connected" size={65} color={'white'} />
+        <Icon name="car-connected" size={50} color={'white'} />
+        <View style={{height: 70}}>
+          <DotIndicator size={10} color="white" />
+        </View>
       </View>
+
       <View
         style={{
           alignItems: 'center',
@@ -24,7 +29,7 @@ export default function Connect() {
           borderRadius: 10,
           padding: 20,
         }}>
-        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 18}}>
+        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 15}}>
           List of availble cars will apears here...
         </Text>
       </View>

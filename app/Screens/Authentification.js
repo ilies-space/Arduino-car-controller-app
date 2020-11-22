@@ -40,13 +40,14 @@ export default function Authentification() {
           onSubmitEditing={() => {
             console.log('check pin code , if true the move next');
             console.log({});
+            navigation.navigate('Connect');
 
-            if (pinCode === '0000') {
-              navigation.navigate('Connect');
-            } else {
-              alert('wrong pinCode');
-            }
-            pinCode = '';
+            // if (pinCode === '0000') {
+            //   navigation.navigate('Connect');
+            // } else {
+            //   alert('wrong pinCode');
+            // }
+            // pinCode = '';
           }}
         />
       </View>
